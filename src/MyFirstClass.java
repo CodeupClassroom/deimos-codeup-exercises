@@ -23,7 +23,31 @@ public class MyFirstClass {
 
         final String nameL = "fernando";
 //        nameL = "Luis";
-        System.out.print(nameL);
+        System.out.println(nameL);
+
+//        Binary expression
+        System.out.println("aNumber = " + (aNumber + 2));
+
+        //        Binary expression
+//        aNumber++;
+        System.out.println("aNumber = " + ++aNumber);
+
+//        Input from the terminal
+        double pi = 3.14159;
+        byte almostPi = (byte) pi;
+        System.out.println("pi = " + pi);
+        System.out.println("almostPi = " + almostPi);
+
+//        Simulate a HTTP request
+        String ageParameter = "29";
+        Integer anotherNumber = 5;
+
+        anotherNumber.byteValue();
+        byte realAge = (byte) (Integer.parseInt(ageParameter) + 1);
+        System.out.println("realAge = " + realAge);
+
+
+
     }
 
 }
