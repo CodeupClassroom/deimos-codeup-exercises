@@ -100,8 +100,10 @@ public class ControlFlowExercises {
             int grade = sc.nextInt();
 
             char letterGrade;
-
-            if (grade >= 90) {
+            if (grade > 100)  {
+                System.out.println("That's impossible. No one can give more than one hundred percent. By definition that is the most anyone can give.");
+                continue;
+            } else if (grade >= 90) {
                 letterGrade = 'A';
             } else if (grade >= 80) {
                 letterGrade = 'B';
