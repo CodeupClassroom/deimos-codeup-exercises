@@ -26,9 +26,18 @@ public class MethodsExercise {
 //            start = scan.nextLine().equalsIgnoreCase("y");
 //        }
 
+//        do {
+//            System.out.println("Give me the number of sides");
+//            rollDices(getInteger(1,100));
+//            System.out.println("Would you like to continue? (y/n)");
+//        } while (scan.nextLine().equalsIgnoreCase("y"));
+
         do {
-            System.out.println("Give me the number of sides");
-            rollDices(getInteger(1,100));
+            Random random = new Random();
+            int winningNumber = random.nextInt(100) + 1;
+
+            System.out.println("Give me a number to guess");
+            guessGame( getInteger(1,100), winningNumber);
             System.out.println("Would you like to continue? (y/n)");
         } while (scan.nextLine().equalsIgnoreCase("y"));
 
@@ -92,6 +101,22 @@ public class MethodsExercise {
 
         System.out.println("random1 = " + random1);
         System.out.println("random2 = " + random2);
+
+    }
+
+    public static void guessGame(int firstGuess, int winningNumber) {
+
+        System.out.println("winningNumber = " + winningNumber);
+
+        if(firstGuess == winningNumber){
+            System.out.println("You won");
+        } else if (firstGuess < winningNumber ){
+            System.out.println("Go higher, try again: ");
+            guessGame(getInteger(1, 100), winningNumber);
+        } else {
+            System.out.println("Go Lower, try again: ");
+            guessGame(getInteger(1, 100), winningNumber);
+        }
 
     }
 
