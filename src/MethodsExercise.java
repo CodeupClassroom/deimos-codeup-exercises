@@ -6,6 +6,8 @@ public class MethodsExercise {
 
     public static void main(String[] args) {
 
+        boolean start = true;
+
         System.out.println("sum(1,2) = " + sum(1, 2));
 //        System.out.println(sum(1,2) == 3);
 //        System.out.println(sum(-1,2) == 1);
@@ -16,6 +18,12 @@ public class MethodsExercise {
 
         System.out.print("Enter a number between 1 and 10: ");
         System.out.println("userInput = " + getInteger(1, 10));
+
+        while(start){
+            System.out.println("calculateFactorial() = " + calculateFactorial());
+            System.out.println("Would you like to continue? (y/n)");
+            start = scan.nextLine().equalsIgnoreCase("y");
+        }
 
     }
 
@@ -51,6 +59,21 @@ public class MethodsExercise {
         }
 
         return input;
+    }
+
+
+    public static long calculateFactorial(){
+
+        System.out.print("Enter a number between 1 and 10: ");
+        int number = getInteger(1,10);
+        // 4
+        long output = 1;
+
+        for (int counter = 1; counter <= number ; counter++){
+                output *= counter;
+        }
+
+        return output;
     }
 
 
