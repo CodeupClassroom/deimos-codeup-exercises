@@ -13,6 +13,18 @@ public class OopImplementation {
 //        Person.liveOnEarth;
 
         // prints "Hello from Rick Sanchez!"
+
+        Person ada = new Person();
+        ada.firstName = "Ada";
+        ada.lastName = "Lovelace";
+
+        Person grace = new Person();
+        grace.firstName = "Grace";
+        grace.lastName = "Hopper";
+
+        System.out.println("Person.worldPopulation = " + Person.worldPopulation);
+
+
     }
 
 
