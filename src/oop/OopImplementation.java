@@ -9,7 +9,6 @@ public class OopImplementation {
         rick.lastName = "Sanchez";
         System.out.println(rick.sayHello());
         System.out.println(Person.breathe("air"));
-        System.out.println(rick.breathe("air"));
 
 //        Person.liveOnEarth;
 
