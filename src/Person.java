@@ -23,6 +23,13 @@ public class Person {
         System.out.println("Hi, my name is: " + this.name);
     }
 
-    
+    // Create a main method on the class that creates a new Person object and tests the above methods.
+    public static void main(String[] args) {
+        Person elsa = new Person("Elsa");
+        // Rewrite name to add last name, this allows us to test getName() and setName()
+        elsa.setName(elsa.getName() +  " Agnarr");
+        // Test new name
+        elsa.sayHello();
+    }
 
 }
