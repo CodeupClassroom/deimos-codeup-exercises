@@ -1,3 +1,5 @@
+package inheritance_n_polymorph;
+
 public class SuperHero extends Person {
 
     private String alterEgo;

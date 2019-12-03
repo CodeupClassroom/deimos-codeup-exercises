@@ -1,3 +1,5 @@
+package inheritance_n_polymorph;
+
 public class Employee extends Person {
 
     public Employee(String employeeName){

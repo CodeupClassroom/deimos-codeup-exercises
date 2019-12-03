@@ -17,7 +17,7 @@ public class OopImplementation {
         System.out.println(rick.sayHello());
         System.out.println(Person.breathe("air"));
 
-//        Person.liveOnEarth;
+//        inheritance_n_polymorph.Person.liveOnEarth;
 
         // prints "Hello from Rick Sanchez!"
 
@@ -30,7 +30,7 @@ public class OopImplementation {
         grace.provideDocs("birthCertificate", 100);
         ada.provideDocs("fakeBirthCertificate", 1000);
 
-        System.out.println("Person.worldPopulation = " + Person.worldPopulation);
+        System.out.println("inheritance_n_polymorph.Person.worldPopulation = " + Person.worldPopulation);
 
 
     }
