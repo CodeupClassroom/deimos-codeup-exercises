@@ -2,10 +2,21 @@ public class Person {
 
     // The class has a private name property that is a string
     private String name;
+    public String hairColor;
 
     //The class should have a constructor that accepts a String value and sets the person's name to the passed string.
-    public Person(String name) {
-        this.name = name;
+    public Person(String nameParam) {
+        this.name = nameParam;
+        setHairColor();
+    }
+
+    public void setHairColor() {
+        // randomize the hairColor with an Array
+        this.hairColor = "black";
+    }
+
+    public void setHairColor(String color) {
+        this.hairColor = color;
     }
 
     // returns the person's name
