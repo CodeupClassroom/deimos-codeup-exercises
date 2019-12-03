@@ -1,3 +1,5 @@
+package inheritance_n_polymorph;
+
 public class InheritanceAndPolymorph {
 
     public static void main(String[] args) {
@@ -25,7 +27,7 @@ public class InheritanceAndPolymorph {
 
 
 
-//        SuperHero theManOfSteel = new SuperHero("Clark Kent", "Superman");
+//        inheritance_n_polymorph.SuperHero theManOfSteel = new inheritance_n_polymorph.SuperHero("Clark Kent", "Superman");
 //
 //        System.out.println(theManOfSteel.getName()); // "Superman"
 //

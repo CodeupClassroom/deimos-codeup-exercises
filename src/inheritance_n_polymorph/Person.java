@@ -1,3 +1,5 @@
+package inheritance_n_polymorph;
+
 public class Person {
 
     // The class has a private name property that is a string
@@ -34,7 +36,7 @@ public class Person {
         System.out.println("Hi, my name is: " + this.name);
     }
 
-    // Create a main method on the class that creates a new Person object and tests the above methods.
+    // Create a main method on the class that creates a new inheritance_n_polymorph.Person object and tests the above methods.
     public static void main(String[] args) {
         Person elsa = new Person("Elsa");
         // Rewrite name to add last name, this allows us to test getName() and setName()

@@ -1,3 +1,5 @@
+package inheritance_n_polymorph;
+
 public class Instructor extends Employee {
     public Instructor(String instructorsName){
         super(instructorsName);

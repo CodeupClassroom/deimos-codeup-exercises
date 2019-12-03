@@ -9,7 +9,7 @@ public class Person {
     private String ssn;
 
 //    Executes every time that someone makes a new Object()
-//    public Person(){
+//    public inheritance_n_polymorph.Person(){
 //        this.worldPopulation++;
 //    }
 
