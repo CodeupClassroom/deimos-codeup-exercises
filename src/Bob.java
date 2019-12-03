@@ -1,7 +1,12 @@
 import java.util.Scanner;
 
 public class Bob {
+
+    Password password = new Password("pass");
+
     public static void main(String[] args) {
+
+        Password.checkPass("0pass1");
         Scanner sc = new Scanner(System.in).useDelimiter("\n");
         System.out.println("This is Bob!");
         System.out.println("Let's start by greeting him");

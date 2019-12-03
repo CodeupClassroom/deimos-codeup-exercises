@@ -8,4 +8,11 @@ public class Instructor extends Employee {
         System.out.println("Hello Deimos!");
     }
 
+    @Override
+    public void doWork(){
+        System.out.println("Coding...");
+        System.out.println("Teaching...");
+        System.out.println("Explaining...");
+    }
+
 }
