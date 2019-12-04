@@ -11,7 +11,7 @@ public class Input {
     }
 
     public boolean yesNo(){
-        System.out.println("Type: yes/y");
+        System.out.println("Yes or No?");
         String input = getString();
         return input.equalsIgnoreCase("yes") || input.equalsIgnoreCase("y");
     }
