@@ -21,8 +21,10 @@ public class Input {
         int number = getInt();
 
         if(number < min){
+            System.out.println(String.format("Number outside of range (%d - %d)", min, max));
             return getInt(min, max);
         } else if (number > max) {
+            System.out.println(String.format("Number outside of range (%d - %d)", min, max));
             return getInt(min, max);
         }
 
@@ -30,16 +32,25 @@ public class Input {
     }
 
     public int getInt(){
-        System.out.println("Give me a number");
-        return Integer.parseInt(getString());
+        System.out.println("Give me a number: ");
+        int number;
+        try{
+            number = Integer.valueOf(getString());
+            return number;
+        } catch (NumberFormatException nfe){
+            System.out.println("Wrong input, try again: ");
+            return getInt();
+        }
     }
 
     public double getDouble(double min, double max){
         double number = getDouble();
 
         if(number < min){
+            System.out.println(String.format("Number outside of range (%f - %f)", min, max));
             return getDouble(min, max);
         } else if (number > max) {
+            System.out.println(String.format("Number outside of range (%f - %f)", min, max));
             return getDouble(min, max);
         }
 
@@ -47,8 +58,15 @@ public class Input {
     }
 
     public double getDouble(){
-        System.out.println("Give me a decimal");
-        return Double.parseDouble(getString());
+        System.out.println("Give me a decimal: ");
+        double number;
+        try{
+            number = Double.valueOf(getString());
+            return number;
+        } catch (NumberFormatException nfe){
+            System.out.println("Wrong input, try again: ");
+            return getDouble();
+        }
     }
 
 }
