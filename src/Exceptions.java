@@ -6,7 +6,6 @@ public class Exceptions {
 
     public static void main(String[] args) throws Exception, IndexOutOfBoundsException {
 
-
         String indentationPreference;
 
         try {
@@ -52,7 +51,6 @@ public class Exceptions {
 
         if (indentationPreference.equals("tabs")) {
             throw new WrongIndentationTypeException("Spaces are superior!");
-
         }
 
         return indentationPreference;
