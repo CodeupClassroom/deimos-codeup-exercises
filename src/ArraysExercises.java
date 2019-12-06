@@ -1,3 +1,5 @@
+import inheritance_n_polymorph.Person;
+
 import java.util.Arrays;
 
 public class ArraysExercises {
